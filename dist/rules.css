@@ -32,21 +32,13 @@
     z-index: 99;
 }*/
 
-#rules {
-    font-size: 10pt;
-    font-family: sans-serif;
-    line-height: 15pt;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: white;
-    padding-left: 2.2em;
+#rules-of-ultimate {
+    line-height: 1.5em;
 }
 
-#rules p, p.rulesBody {
+#rules-of-ultimate p, p.rulesBody {
     padding: 0;
     margin: 0;
-    font-size 1em;
-    font-family: sans-serif;
 }
 
 table.handSignals, table.fieldDiagram, table.normal {
@@ -100,29 +92,36 @@ table.handSignals, table.fieldDiagram, table.handSignals th, table.handSignals t
     text-decoration: underline;
 }
 
+.toc-header {
+    padding-bottom: 0.5rem;
+}
+
+.toc {
+    border: 1px solid #002B5C;
+    padding: 1rem 2rem;
+    max-width: 320px;
+}
+
+.toc ol {
+    margin-left: 1.5rem;
+}
+
 .toc ol li {
     font-weight: normal;
 }
 
-#rules h2 {
-    font-size: 1em;
-    margin-bottom: .5em;
-    font-weight: bold;
-}
-
 .appendix_list {
-    margin: -1em 0 -1em 0em;
     padding: 1em 0;
 }
 
 p#prefaceBody {
     font-style: italic;
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 p#preface_title {
-    margin-top: 1em;
+    margin-top: 3em;
     font-weight: bold;
     font-size: 1em;
 }
@@ -131,25 +130,25 @@ p#preface_title {
     color: darkcyan;
 }
 
-#rules ol {
+#rules-of-ultimate ol {
     list-style-position: outside;
     list-style-type: decimal;
     font-weight: bold;
 }
-#rules ol ol, .appendix > ol ol {
+#rules-of-ultimate ol ol, .appendix > ol ol {
     list-style-type: upper-alpha;
     font-weight: normal;
 }
-#rules ol ol ol, .appendix > ol ol ol {
+#rules-of-ultimate ol ol ol, .appendix > ol ol ol {
     list-style-type: decimal;
 }
-#rules ol ol ol ol, .appendix > ol ol ol ol {
+#rules-of-ultimate ol ol ol ol, .appendix > ol ol ol ol {
     list-style-type: lower-alpha;
 }
-#rules ol ol ol ol ol, .appendix > ol ol ol ol ol {
+#rules-of-ultimate ol ol ol ol ol, .appendix > ol ol ol ol ol {
     list-style-type: decimal;
 }
-#rules ol ol ol ol ol ol, .appendix > ol ol ol ol ol ol {
+#rules-of-ultimate ol ol ol ol ol ol, .appendix > ol ol ol ol ol ol {
     list-style-type: lower-alpha;
 }
 
@@ -203,4 +202,3 @@ div.appendixTitle + div.rulesBody, div.rulesBody + div.rulesBody {
 .a > ol> li:before {
     content: 'A' counter(item, decimal) '. ';    
 }
-
