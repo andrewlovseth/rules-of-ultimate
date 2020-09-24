@@ -1,6 +1,6 @@
 <div id="rules">
-    <div class="headline section-header underline  uppercase blue">
-        <h3>Table of Contents</h3>
+    <div class="headline section-header toc-header underline uppercase blue">
+        <h4>Table of Contents</h4>
     </div>
     
     <div class="toc">
@@ -1476,9 +1476,13 @@
             text-decoration: underline;
         }
 
+        .toc-header {
+            padding-bottom: 0.5rem;
+        }
+
         .toc {
             border: 1px solid #002B5C;
-            padding: 1ren 2rem;
+            padding: 1rem 2rem;
             max-width: 320px;
         }
 
@@ -1497,11 +1501,11 @@
         p#prefaceBody {
             font-style: italic;
             font-size: 1em;
-            margin-bottom: 1em;
+            margin-bottom: 3em;
         }
 
         p#preface_title {
-            margin-top: 1em;
+            margin-top: 3em;
             font-weight: bold;
             font-size: 1em;
         }
@@ -1582,9 +1586,6 @@
         .a > ol> li:before {
             content: 'A' counter(item, decimal) '. ';    
         }
-
-
-
 
     </style>
 </div>
