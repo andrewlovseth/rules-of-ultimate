@@ -75,3 +75,4 @@ gulpfile.babel.js
 .eslintrc.js
 package-lock.json
 package.json
+.DS_Store
