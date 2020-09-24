@@ -1,11 +1,11 @@
 <div id="rules">
-    <div class="headline section-header underline blue">
-        <h2>Table of Contents</h2>
+    <div class="headline section-header underline  uppercase blue">
+        <h3>Table of Contents</h3>
     </div>
     
     <div class="toc">
         <div class="appendix_list">
-            <a href="#preface">Preface</a>
+            <p><a href="#preface">Preface</a></p>
         </div>
         <ol>
             <li><a href="#1">Introduction</a>
@@ -30,11 +30,11 @@
             <li><a href="#20">Etiquette</a>
         </ol>
         <div class="appendix_list">
-            <a href="#appendix_a">Appendix A: Field Diagram</a><br />
-            <a href="#appendix_b">Appendix B: Misconduct System</a><br />
-            <a href="#appendix_c">Appendix C: Hand Signals</a><br />
-            <a href="#appendix_d">Appendix D: Youth Rule Adaptations</a><br />
-            <a href="#appendix_e">Appendix E: Beach Ultimate Rules Adaptations</a>
+            <p><a href="#appendix_a">Appendix A: Field Diagram</a></p>
+            <p><a href="#appendix_b">Appendix B: Misconduct System</a></p>
+            <p><a href="#appendix_c">Appendix C: Hand Signals</a></p>
+            <p><a href="#appendix_d">Appendix D: Youth Rule Adaptations</a></p>
+            <p><a href="#appendix_e">Appendix E: Beach Ultimate Rules Adaptations</a></p>
         </div>
     </div>
 
@@ -1321,6 +1321,7 @@
             </tbody>
         </table>
     </div>
+
     <div class="appendix e">
         <div class="appendixTitle"><a id="appendix_e"></a>Appendix E: Beach Ultimate Rules Adaptations</div>
 
@@ -1416,14 +1417,12 @@
         }*/
 
         #rules {
-            font-size: 1rem;
-            line-height: 1.25em;
+            line-height: 1.5em;
         }
 
         #rules p, p.rulesBody {
             padding: 0;
             margin: 0;
-            font-size: 1rem;
         }
 
         table.handSignals, table.fieldDiagram, table.normal {
@@ -1477,18 +1476,21 @@
             text-decoration: underline;
         }
 
+        .toc {
+            border: 1px solid #002B5C;
+            padding: 1ren 2rem;
+            max-width: 320px;
+        }
+
+        .toc ol {
+            margin-left: 1.5rem;
+        }
+
         .toc ol li {
             font-weight: normal;
         }
 
-        #rules h2 {
-            font-size: 1em;
-            margin-bottom: .5em;
-            font-weight: bold;
-        }
-
         .appendix_list {
-            margin: -1em 0 -1em 0em;
             padding: 1em 0;
         }
 
