@@ -1,204 +1,145 @@
-.tooltip {
-    position: relative;
-    display: inline;
-    margin-bottom: -2px;
-    padding-bottom: 0;
-    border-bottom: 1px dashed #999;
-}
+#rules-of-ultimate * {
+  line-height: 1.5em; }
 
-/*
-.tooltip:hover:after {
-    background: #333;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: 26px;
-    color: #fff;
-    content: attr(ttitle);
-    left: 20%;
-    padding: 5px 10px;
-    position: absolute;
-    z-index: 98;
-    width: 220px;
-}
-
-.tooltip:hover:before {
-    border: solid;
-    border-color: #333 transparent;
-    border-width: 6px 6px 0 6px;
-    bottom: 20px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
-}*/
-
-#rules-of-ultimate {
-    line-height: 1.5em;
-}
-
-#rules-of-ultimate p, p.rulesBody {
-    padding: 0;
-    margin: 0;
-}
-
-table.handSignals, table.fieldDiagram, table.normal {
-    border-collapse: collapse;
-    font-size: 1em;
-    font-weight: normal;
-    margin: .2em 0 1em 1em;
-}
-
-table.handSignals, table.fieldDiagram, table.normal, 
-table.handSignals th, table.fieldDiagram th, table.normalth th, 
-table.handSignals td, table.fieldDiagram td, table.normal td {
-    border: 1px solid black;
-    padding: .4em;
-}
-
-table.handSignals, table.fieldDiagram, table.handSignals th, table.handSignals td, table.fieldDiagram th, table.fieldDiagram td {
-    border: none;
-}
-
-#youth td {
-    vertical-align: top;
-}
-
-.handSignals img {
-    max-height: 120px;
-}
-
-.handSignals {
-    text-align: center;
-}
-
-.handSignals td {
-    padding-top: 0;
-    width: 200px;
-}
-
-.handSignals .desc td {
-    padding-bottom: 3em;
-}
-
-#field_lines {
-    width: 30px;
-}
-
-#field_line_names {
-    padding-top: 9px;
-}
-
-.fieldSizeHeader {
-    text-decoration: underline;
-}
-
-.toc-header {
-    padding-bottom: 0.5rem;
-}
-
-.toc {
-    border: 1px solid #002B5C;
-    padding: 1rem 2rem;
-    max-width: 320px;
-}
-
-.toc ol {
-    margin-left: 1.5rem;
-}
-
-.toc ol li {
-    font-weight: normal;
-}
-
-.appendix_list {
-    padding: 1em 0;
-}
-
-p#prefaceBody {
-    font-style: italic;
-    font-size: 1em;
-    margin-bottom: 3em;
-}
-
-p#preface_title {
-    margin-top: 3em;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.annotation {
-    color: darkcyan;
-}
+#rules-of-ultimate p, #rules-of-ultimate p.rulesBody {
+  padding: 0;
+  margin: 0; }
 
 #rules-of-ultimate ol {
-    list-style-position: outside;
-    list-style-type: decimal;
-    font-weight: bold;
-}
-#rules-of-ultimate ol ol, .appendix > ol ol {
-    list-style-type: upper-alpha;
-    font-weight: normal;
-}
-#rules-of-ultimate ol ol ol, .appendix > ol ol ol {
-    list-style-type: decimal;
-}
-#rules-of-ultimate ol ol ol ol, .appendix > ol ol ol ol {
-    list-style-type: lower-alpha;
-}
-#rules-of-ultimate ol ol ol ol ol, .appendix > ol ol ol ol ol {
-    list-style-type: decimal;
-}
-#rules-of-ultimate ol ol ol ol ol ol, .appendix > ol ol ol ol ol ol {
-    list-style-type: lower-alpha;
-}
+  list-style-position: outside;
+  list-style-type: decimal;
+  font-weight: bold; }
 
-.appendixTitle {
-    font-weight: bold;
-    margin: 1em 0;
-}
+#rules-of-ultimate ol ol, #rules-of-ultimate .appendix > ol ol {
+  list-style-type: upper-alpha;
+  font-weight: normal; }
 
-.appendix {
-    font-weight: normal;
-}
+#rules-of-ultimate ol ol ol, #rules-of-ultimate .appendix > ol ol ol {
+  list-style-type: decimal; }
 
-div.appendixTitle + div.rulesBody, div.rulesBody + div.rulesBody {
-    margin: 1em 0;
-}
+#rules-of-ultimate ol ol ol ol, #rules-of-ultimate .appendix > ol ol ol ol {
+  list-style-type: lower-alpha; }
 
-.appendix > ol {
-    font-size: 1em;
-    font-weight: bold;
-    counter-reset: item;
-    list-style-type: none;
-    *list-style-type: decimal; /*Conditional hack for ie7*/
-}
+#rules-of-ultimate ol ol ol ol ol, #rules-of-ultimate .appendix > ol ol ol ol ol {
+  list-style-type: decimal; }
 
-.appendix > ol > li {
-    margin-left: -1.3em;
-}
+#rules-of-ultimate ol ol ol ol ol ol, #rules-of-ultimate .appendix > ol ol ol ol ol ol {
+  list-style-type: lower-alpha; }
 
-.appendix > ol > li:before {
-    padding-left: -1.8em;
-    content: 'E' counter(item, decimal) '. ';
-    counter-increment: item;
-}
+#rules-of-ultimate .tooltip {
+  position: relative;
+  display: inline;
+  margin-bottom: -2px;
+  padding-bottom: 0;
+  border-bottom: 1px dashed #999; }
 
-.e > ol> li:before {
-    content: 'E' counter(item, decimal) '. ';    
-}
+#rules-of-ultimate .handSignals img {
+  max-height: 120px; }
 
-.d > ol> li:before {
-    content: 'D' counter(item, decimal) '. ';    
-}
+#rules-of-ultimate .handSignals {
+  text-align: center; }
 
-.c > ol> li:before {
-    content: 'C' counter(item, decimal) '. ';    
-}
+#rules-of-ultimate .handSignals td {
+  padding-top: 0;
+  width: 200px; }
 
-.b > ol> li:before {
-    content: 'B' counter(item, decimal) '. ';    
-}
+#rules-of-ultimate .handSignals .desc td {
+  padding-bottom: 3em; }
 
-.a > ol> li:before {
-    content: 'A' counter(item, decimal) '. ';    
-}
+#rules-of-ultimate table.handSignals, #rules-of-ultimate table.fieldDiagram, #rules-of-ultimate table.normal {
+  border-collapse: collapse;
+  font-size: 1em;
+  font-weight: normal;
+  margin: .2em 0 1em 1em; }
+
+#rules-of-ultimate table.handSignals, #rules-of-ultimate table.fieldDiagram, #rules-of-ultimate table.normal,
+#rules-of-ultimate table.handSignals th, #rules-of-ultimate table.fieldDiagram th, #rules-of-ultimate table.normalth th,
+#rules-of-ultimate table.handSignals td, #rules-of-ultimate table.fieldDiagram td, #rules-of-ultimate table.normal td {
+  border: 1px solid black;
+  padding: .4em; }
+
+#rules-of-ultimate table.handSignals, #rules-of-ultimate table.fieldDiagram, #rules-of-ultimate table.handSignals th, #rules-of-ultimate table.handSignals td, #rules-of-ultimate table.fieldDiagram th, #rules-of-ultimate table.fieldDiagram td {
+  border: none; }
+
+#rules-of-ultimate #field_lines {
+  width: 30px; }
+
+#rules-of-ultimate #field_line_names {
+  padding-top: 9px; }
+
+#rules-of-ultimate .fieldSizeHeader {
+  text-decoration: underline; }
+
+#rules-of-ultimate .annotation {
+  color: darkcyan; }
+
+#rules-of-ultimate #youth td {
+  vertical-align: top; }
+
+#rules-of-ultimate .toc {
+  border: 1px solid #002B5C;
+  padding: 1rem 2rem;
+  max-width: 320px; }
+
+#rules-of-ultimate .toc ol {
+  margin-left: 1.5rem; }
+
+#rules-of-ultimate .toc ol li {
+  font-weight: normal; }
+
+#rules-of-ultimate .toc-header {
+  padding-bottom: 0.5rem; }
+
+#rules-of-ultimate .appendix_list {
+  padding: 1em 0; }
+
+#rules-of-ultimate p#prefaceBody {
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 3em; }
+
+#rules-of-ultimate p#preface_title {
+  margin-top: 3em;
+  font-weight: bold;
+  font-size: 1em; }
+
+#rules-of-ultimate .appendixTitle {
+  font-weight: bold;
+  margin: 1em 0; }
+
+#rules-of-ultimate .appendix {
+  font-weight: normal; }
+
+#rules-of-ultimate div.appendixTitle + div.rulesBody, #rules-of-ultimate div.rulesBody + div.rulesBody {
+  margin: 1em 0; }
+
+#rules-of-ultimate .appendix > ol {
+  font-size: 1em;
+  font-weight: bold;
+  counter-reset: item;
+  list-style-type: none;
+  *list-style-type: decimal;
+  /*Conditional hack for ie7*/ }
+
+#rules-of-ultimate .appendix > ol > li {
+  margin-left: -1.3em; }
+
+#rules-of-ultimate .appendix > ol > li:before {
+  padding-left: -1.8em;
+  content: "E" counter(item, decimal) ". ";
+  counter-increment: item; }
+
+#rules-of-ultimate .e > ol > li:before {
+  content: "E" counter(item, decimal) ". "; }
+
+#rules-of-ultimate .d > ol > li:before {
+  content: "D" counter(item, decimal) ". "; }
+
+#rules-of-ultimate .c > ol > li:before {
+  content: "C" counter(item, decimal) ". "; }
+
+#rules-of-ultimate .b > ol > li:before {
+  content: "B" counter(item, decimal) ". "; }
+
+#rules-of-ultimate .a > ol > li:before {
+  content: "A" counter(item, decimal) ". "; }

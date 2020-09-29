@@ -1,0 +1,30 @@
+* {
+    line-height: 1.5em;
+}
+
+p, p.rulesBody {
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+    font-weight: bold;
+}
+ol ol, .appendix > ol ol {
+    list-style-type: upper-alpha;
+    font-weight: normal;
+}
+ol ol ol, .appendix > ol ol ol {
+    list-style-type: decimal;
+}
+ol ol ol ol, .appendix > ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+ol ol ol ol ol, .appendix > ol ol ol ol ol {
+    list-style-type: decimal;
+}
+ol ol ol ol ol ol, .appendix > ol ol ol ol ol ol {
+    list-style-type: lower-alpha;
+}
