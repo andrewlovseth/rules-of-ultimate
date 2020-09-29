@@ -76,22 +76,22 @@
 #rules-of-ultimate #youth td {
   vertical-align: top; }
 
-#rules-of-ultimate .toc {
+#rules-of-ultimate .table-of-contents {
   border: 1px solid #002B5C;
   padding: 1rem 2rem;
-  max-width: 320px; }
-
-#rules-of-ultimate .toc ol {
-  margin-left: 1.5rem; }
-
-#rules-of-ultimate .toc ol li {
-  font-weight: normal; }
-
-#rules-of-ultimate .toc-header {
-  padding-bottom: 0.5rem; }
-
-#rules-of-ultimate .appendix_list {
-  padding: 1em 0; }
+  max-width: 340px; }
+  #rules-of-ultimate .table-of-contents ol {
+    margin-left: 1.5rem; }
+    #rules-of-ultimate .table-of-contents ol li {
+      font-weight: normal; }
+  #rules-of-ultimate .table-of-contents .toc-header {
+    padding-bottom: 0.5rem; }
+  #rules-of-ultimate .table-of-contents .toc-preface {
+    padding: 0 0 0.5rem 0; }
+  #rules-of-ultimate .table-of-contents .toc-appendix {
+    padding: 0.5rem 0 1rem 0; }
+    #rules-of-ultimate .table-of-contents .toc-appendix p + p {
+      padding-top: 0.5rem; }
 
 #rules-of-ultimate p#prefaceBody {
   font-style: italic;

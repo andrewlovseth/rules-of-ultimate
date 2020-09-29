@@ -1,21 +1,30 @@
-.toc {
+.table-of-contents {
     border: 1px solid #002B5C;
     padding: 1rem 2rem;
-    max-width: 320px;
+    max-width: 340px;
+
+    ol {
+        margin-left: 1.5rem;
+    
+        li {
+            font-weight: normal;
+        }
+    }
+    
+    .toc-header {
+        padding-bottom: 0.5rem;
+    }
+    
+    .toc-preface {
+        padding: 0 0 0.5rem 0;
+    }
+
+    .toc-appendix {
+        padding: 0.5rem 0 1rem 0;
+
+        p + p {
+            padding-top: 0.5rem;
+        }
+    }    
 }
 
-.toc ol {
-    margin-left: 1.5rem;
-}
-
-.toc ol li {
-    font-weight: normal;
-}
-
-.toc-header {
-    padding-bottom: 0.5rem;
-}
-
-.appendix_list {
-    padding: 1em 0;
-}
