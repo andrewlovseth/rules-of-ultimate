@@ -1,0 +1,342 @@
+/* START RULES */
+#rules-of-ultimate {
+    line-height: 1.5em;
+}
+
+ol.appendices,
+ol.main-rules {
+    counter-reset: level-one;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+ol.appendices li,
+ol.main-rules li {
+    color: #B30839;
+    font-size: 1.5rem;
+}
+
+ol.appendices ol li,
+ol.main-rules ol li {
+    color: #000;
+    font-size: 1rem;
+    margin: 0;
+}
+
+ol.main-rules li::before {
+    counter-increment: level-one;
+    content: counter(level-one) ". ";
+}
+
+ol.appendices li::before {
+    counter-increment: level-one;
+    content: "Appendix "counter(level-one, upper-alpha) ": ";
+}
+
+ol.appendices ol,
+ol.main-rules ol {
+    list-style-type: none;
+    list-style-position: outside;
+    counter-reset: level-two;
+    margin: 1rem 0 1rem 1rem;
+    font-weight: normal;
+}
+
+ol.main-rules ol li::before {
+    font-weight: bold;
+    counter-increment: level-two;
+    content: counter(level-one) "."counter(level-two, upper-alpha) ". ";
+}
+
+ol.appendices ol li::before {
+    font-weight: bold;
+    counter-increment: level-two;
+    content: counter(level-one, upper-alpha) ""counter(level-two) ". ";
+}
+
+ol.appendices ol li {
+    font-weight: bold;
+}
+
+ol.appendices ol ol,
+ol.main-rules ol ol {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0 0 0 1rem;
+    counter-reset: level-three;
+}
+
+ol.main-rules ol ol li::before {
+    counter-increment: level-three;
+    content: counter(level-one) "."counter(level-two, upper-alpha) "."counter(level-three) ". ";
+}
+
+ol.appendices ol ol li::before {
+    counter-increment: level-three;
+    content: counter(level-one, upper-alpha) ""counter(level-two) "."counter(level-three, upper-alpha) ". ";
+}
+
+ol.appendices ol ol {
+    padding-top: .5rem;
+}
+
+ol.appendices ol ol li {
+    font-weight: normal;
+}
+
+
+ol.appendices ol ol ol,
+ol.main-rules ol ol ol {
+    list-style-type: none;
+    counter-reset: level-four;
+}
+
+ol.main-rules ol ol ol li::before {
+    counter-increment: level-four;
+    content: counter(level-one) "."counter(level-two, upper-alpha) "."counter(level-three) "."counter(level-four, lower-alpha) ". ";
+}
+
+ol.appendices ol ol ol li::before {
+    counter-increment: level-four;
+    content: counter(level-one, upper-alpha) ""counter(level-two) "."counter(level-three, upper-alpha) "."counter(level-four) ". ";
+}
+
+ol.appendices ol ol ol {
+    padding-top: 0;
+}
+
+ol.appendices ol ol ol ol,
+ol.main-rules ol ol ol ol {
+    list-style-type: none;
+    counter-reset: level-five;
+}
+
+ol.main-rules ol ol ol ol li::before {
+    counter-increment: level-five;
+    content: counter(level-one) "."counter(level-two, upper-alpha) "."counter(level-three) "."counter(level-four, lower-alpha) "."counter(level-five) ". ";
+}
+
+ol.appendices ol ol ol ol li::before {
+    counter-increment: level-five;
+    content: counter(level-one, upper-alpha) ""counter(level-two) "."counter(level-three, upper-alpha) "."counter(level-four) "."counter(level-five, lower-alpha) ". ";
+}
+
+ol.appendices ol ol ol ol ol,
+ol.main-rules ol ol ol ol ol {
+    list-style-type: none;
+    counter-reset: level-six;
+}
+
+ol.main-rules ol ol ol ol ol li::before {
+    counter-increment: level-six;
+    content: counter(level-one) "."counter(level-two, upper-alpha) "."counter(level-three) "."counter(level-four, lower-alpha) "."counter(level-five) "."counter(level-six, lower-alpha) ". "
+}
+
+ol.appendices ol ol ol ol ol li::before {
+    counter-increment: level-six;
+    content: counter(level-one, upper-alpha) ""counter(level-two) "."counter(level-three, upper-alpha) "."counter(level-four) "."counter(level-five, lower-alpha) "."counter(level-six) ". "
+}
+
+ol.main-rules ol ul li::before {
+    content: none;
+}
+
+}
+
+ol.main-rules li {
+    color: #B30839;
+    font-size: 1.5rem;
+}
+
+ol.appendices div.plain {
+    color: #000;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1rem 0 0 1rem;
+}
+
+ol.appendices table {
+    margin: 1rem 0;
+}
+
+
+ol.appendices li:first-child,
+ol.main-rules li:first-child {
+    margin-top: .5rem;
+}
+
+ol.appendices li:last-child,
+ol.main-rules li:last-child {
+    margin-bottom: .5rem;
+}
+
+#rules-of-ultimate .tooltip {
+    position: relative;
+    display: inline;
+    padding-bottom: 0;
+    border-bottom: 1px dashed #B30839;
+}
+
+#rules-of-ultimate .tooltip:hover {
+    cursor: pointer;
+}
+
+#rules-of-ultimate .handSignals img {
+    max-height: 300px;
+}
+
+#rules-of-ultimate .handSignals {
+    text-align: center;
+}
+
+#rules-of-ultimate .handSignals td {
+    padding-top: 0;
+    width: 300px;
+}
+
+#rules-of-ultimate table.handSignals,
+#rules-of-ultimate table.fieldDiagram,
+#rules-of-ultimate table.normal {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#rules-of-ultimate table.fieldDiagram {
+    margin-left: 1rem;
+}
+
+#rules-of-ultimate .handSignals {
+    margin-top: 2rem;
+}
+
+#rules-of-ultimate .handSignals td {
+    vertical-align: middle;
+}
+
+#rules-of-ultimate .handSignals td img {
+    margin: 0 auto;
+}
+
+#rules-of-ultimate .handSignals .desc td {
+    font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+    font-size: 0.875rem;
+    color: #002B5C;
+    padding: 0 0 2rem 0;
+}
+
+#rules-of-ultimate #field_lines {
+    width: 30px;
+}
+
+#rules-of-ultimate #field_line_names {
+    padding-top: 9px;
+}
+
+#rules-of-ultimate .fieldSizeHeader {
+    text-decoration: underline;
+}
+
+#rules-of-ultimate .annotation {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+#rules-of-ultimate .youth tbody {
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+#rules-of-ultimate .youth tbody td {
+    color: #000;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type {
+    font-weight: bold;
+    background: #002B5C;
+    color: #fff;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type td {
+    color: #fff;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type td {
+    padding: 0.5rem 1rem;
+}
+
+#rules-of-ultimate .youth tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+#rules-of-ultimate .youth tbody tr td:first-of-type {
+    font-weight: bold;
+}
+
+#rules-of-ultimate .youth tbody td {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+#rules-of-ultimate .youth tbody li {
+    font-size: 0.825rem;
+    color: #000;
+}
+
+#rules-of-ultimate .youth tbody li::before {
+    content: none;
+}
+
+#rules-of-ultimate .table-of-contents {
+    border: 1px solid #002B5C;
+    padding: 2rem;
+    max-width: 340px;
+    font-size: 0.9375rem;
+}
+
+#rules-of-ultimate .table-of-contents ol {
+    margin-left: 1.5rem;
+}
+
+#rules-of-ultimate .table-of-contents ol li {
+    font-weight: normal;
+}
+
+#rules-of-ultimate .table-of-contents .toc-header {
+    padding-bottom: 0.5rem;
+}
+
+#rules-of-ultimate .table-of-contents .toc-preface {
+    padding: 0 0 0.5rem 0;
+}
+
+#rules-of-ultimate .table-of-contents .toc-rules li {
+    padding-left: 0.25rem;
+    color: #002B5C;
+}
+
+#rules-of-ultimate .table-of-contents .toc-appendix {
+    padding: 0.5rem 0 0 0;
+}
+
+#rules-of-ultimate .table-of-contents .toc-appendix p + p {
+    padding-top: 0.5rem;
+}
+
+#rules-of-ultimate p#prefaceBody {
+    font-style: italic;
+    font-size: 1em;
+    margin: .5rem 0 1em 0;
+}
+
+#rules-of-ultimate p#preface_title {
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 1em;
+    color: #B30839;
+    font-size: 1.5rem;
+}
+/* END RULES */
