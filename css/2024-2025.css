@@ -3,7 +3,7 @@
     line-height: 1.5em;
 }
 
-ul.main-rules {
+#rules-of-ultimate ul.main-rules {
     list-style-type: none;
     list-style-position: outside;
     margin: 1.5rem 0;
@@ -11,19 +11,23 @@ ul.main-rules {
     padding: 0;
 }
 
-ul.main-rules li {
+#rules-of-ultimate ul.main-rules li {
+    list-style-type: none;
+}
+
+#rules-of-ultimate ul.main-rules li {
     color: #B30839;
     font-size: 1.5rem;
     margin: 1rem 0;
 }
 
-ul.main-rules ul > li {
+#rules-of-ultimate ul.main-rules ul > li {
     color: #000;
     font-size: 1rem;
     margin: 0;
 }
 
-ul.main-rules ul {
+#rules-of-ultimate ul.main-rules ul {
     list-style-type: none;
     list-style-position: outside;
     margin: .25rem 0;
@@ -31,30 +35,38 @@ ul.main-rules ul {
     padding-inline-start: 1rem;
 }
 
-ul.main-rules ul li:first-child {
+#rules-of-ultimate ul.main-rules ul li:first-child {
     margin-top: .75rem;
 }
 
-ul.main-rules ul ul li:first-child {
+#rules-of-ultimate ul.main-rules ul ul li:first-child {
     margin-top: 0;
 }
 
-ul.main-rules li > a:first-child {
+#rules-of-ultimate ul.main-rules li > a:first-child {
     font-weight: bold;
+    color: black;
+    transition: none;
+    text-decoration: none;
+    text-transform: none;
 }
 
-ul.main-rules div.plain {
+#rules-of-ultimate ul.main-rules > li > a:first-child {
+    color: #B30839;
+}
+
+#rules-of-ultimate ul.main-rules div.plain {
     color: #000;
     font-size: 1rem;
     font-weight: normal;
     margin: 1rem 0 0 1rem;
 }
 
-ul.main-rules table {
+#rules-of-ultimate ul.main-rules table {
     margin: 1rem 0;
 }
 
-ul.main-rules ul.examples {
+#rules-of-ultimate ul.main-rules ul.examples li {
     list-style-type: disc;
     list-style-position: outside;
     margin-left: .5rem;
@@ -226,5 +238,21 @@ ul.main-rules ul.examples {
     font-size: 1em;
     color: #B30839;
     font-size: 1.5rem;
+}
+
+#rules-of-ultimate .rules tbody td {
+    width: 50%;
+    padding: 1rem;
+    vertical-align: top;
+    font-size: 0.875rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+#rules-of-ultimate .rules tbody tr td:first-of-type {
+    font-weight: bold;
+}
+
+#rules-of-ultimate .rules tbody tr:nth-child(even) {
+    background: #fafafa;
 }
 /* END RULES */
