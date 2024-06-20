@@ -1,0 +1,258 @@
+/* START RULES */
+#rules-of-ultimate {
+    line-height: 1.5em;
+}
+
+#rules-of-ultimate ul.main-rules {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 1.5rem 0;
+    font-weight: bold;
+    padding: 0;
+}
+
+#rules-of-ultimate ul.main-rules li {
+    list-style-type: none;
+}
+
+#rules-of-ultimate ul.main-rules li {
+    color: #B30839;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#rules-of-ultimate ul.main-rules ul > li {
+    color: #000;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#rules-of-ultimate ul.main-rules ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: .25rem 0;
+    font-weight: normal;
+    padding-inline-start: 1rem;
+}
+
+#rules-of-ultimate ul.main-rules ul li:first-child {
+    margin-top: .75rem;
+}
+
+#rules-of-ultimate ul.main-rules ul ul li:first-child {
+    margin-top: 0;
+}
+
+#rules-of-ultimate ul.main-rules li > a:first-child {
+    font-weight: bold;
+    color: black;
+    transition: none;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#rules-of-ultimate ul.main-rules > li > a:first-child {
+    color: #B30839;
+}
+
+#rules-of-ultimate ul.main-rules div.plain {
+    color: #000;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1rem 0 0 1rem;
+}
+
+#rules-of-ultimate ul.main-rules table {
+    margin: 1rem 0;
+}
+
+#rules-of-ultimate ul.main-rules ul.examples li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: .5rem;
+}
+
+#rules-of-ultimate .tooltip {
+    position: relative;
+    display: inline;
+    padding-bottom: 0;
+    border-bottom: 1px dashed #B30839;
+}
+
+#rules-of-ultimate .tooltip:hover {
+    cursor: pointer;
+}
+
+#rules-of-ultimate .handSignals img {
+    max-height: 300px;
+}
+
+#rules-of-ultimate .handSignals {
+    text-align: center;
+}
+
+#rules-of-ultimate .handSignals td {
+    padding-top: 0;
+    width: 300px;
+}
+
+#rules-of-ultimate table.handSignals,
+#rules-of-ultimate table.fieldDiagram,
+#rules-of-ultimate table.normal {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#rules-of-ultimate table.fieldDiagram {
+    margin-left: 1rem;
+}
+
+#rules-of-ultimate .handSignals {
+    margin-top: 2rem;
+}
+
+#rules-of-ultimate .handSignals td {
+    vertical-align: middle;
+}
+
+#rules-of-ultimate .handSignals td img {
+    margin: 0 auto;
+}
+
+#rules-of-ultimate .handSignals .desc td {
+    font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+    font-size: 0.875rem;
+    color: #002B5C;
+    padding: 0 0 2rem 0;
+}
+
+#rules-of-ultimate #field_lines {
+    width: 30px;
+}
+
+#rules-of-ultimate #field_line_names {
+    padding-top: 9px;
+}
+
+#rules-of-ultimate .fieldSizeHeader {
+    text-decoration: underline;
+}
+
+#rules-of-ultimate .annotation {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+#rules-of-ultimate .youth tbody {
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+#rules-of-ultimate .youth tbody td {
+    color: #000;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type {
+    font-weight: bold;
+    background: #002B5C;
+    color: #fff;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type td {
+    color: #fff;
+}
+
+#rules-of-ultimate .youth tbody tr:first-of-type td {
+    padding: 0.5rem 1rem;
+}
+
+#rules-of-ultimate .youth tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+#rules-of-ultimate .youth tbody tr td:first-of-type {
+    font-weight: bold;
+}
+
+#rules-of-ultimate .youth tbody td {
+    padding: 1rem;
+    vertical-align: top;
+}
+
+#rules-of-ultimate .youth tbody li {
+    font-size: 0.825rem;
+    color: #000;
+}
+
+#rules-of-ultimate .youth tbody li::before {
+    content: none;
+}
+
+#rules-of-ultimate .table-of-contents {
+    border: 1px solid #002B5C;
+    padding: 2rem;
+    max-width: 340px;
+    font-size: 0.9375rem;
+}
+
+#rules-of-ultimate .table-of-contents ol {
+    margin-left: 1.5rem;
+}
+
+#rules-of-ultimate .table-of-contents ol li {
+    font-weight: normal;
+}
+
+#rules-of-ultimate .table-of-contents .toc-header {
+    padding-bottom: 0.5rem;
+}
+
+#rules-of-ultimate .table-of-contents .toc-preface {
+    padding: 0 0 0.5rem 0;
+}
+
+#rules-of-ultimate .table-of-contents .toc-rules li {
+    padding-left: 0.25rem;
+    color: #002B5C;
+}
+
+#rules-of-ultimate .table-of-contents .toc-appendix {
+    padding: 0.5rem 0 0 0;
+}
+
+#rules-of-ultimate .table-of-contents .toc-appendix p + p {
+    padding-top: 0.5rem;
+}
+
+#rules-of-ultimate p#prefaceBody {
+    font-style: italic;
+    font-size: 1em;
+    margin: 0 0 1em 0;
+}
+
+#rules-of-ultimate p#preface_title {
+    margin: 3em 0 .75rem 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: #B30839;
+    font-size: 1.5rem;
+}
+
+#rules-of-ultimate .rules tbody td {
+    width: 50%;
+    padding: 1rem;
+    vertical-align: top;
+    font-size: 0.875rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+#rules-of-ultimate .rules tbody tr td:first-of-type {
+    font-weight: bold;
+}
+
+#rules-of-ultimate .rules tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+/* END RULES */
